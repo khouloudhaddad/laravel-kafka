@@ -40,6 +40,7 @@ class KafkaQueue extends Queue implements QueueConstract
         $this->consumer->subscribe([$queue]);
         try {
             $message = $this->consumer->consume(130 * 1000);
+            var_dump($message->err);
             switch ($message->err){
                 case RD_KAFKA_RESP_ERR_NO_ERROR:
                     var_dump($message->payload);

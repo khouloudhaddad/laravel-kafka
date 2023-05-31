@@ -21,7 +21,7 @@ class KafkaServiceProvider extends ServiceProvider
     public function boot(): void
     {
         $manager = $this->app['queue'];
-        $manager->addConnector('kafka', function (){
+        $manager->addConnector('kafka', function () {
             return new KafkaConnector();
         });
     }
