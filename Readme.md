@@ -13,6 +13,6 @@
    - `php artisan make:job CreatedProduct`
 
 ### Get credentials for .env file 
-(confluent)[https://www.confluent.io/]
+[confluent](https://www.confluent.io/)
 
 
